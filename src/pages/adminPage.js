@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Table from "react-bootstrap/Table";
+// import EditRequest from "../components/editRequest";
+// import RequestDetails from "../components/RequestDetails";
 
 export default function AdminPage() {
   const [getRequestsList, setGetRequestsList] = useState([]);
   const requestEndpoint =
     "https://63bb0bcecf99234bfa50f42b.mockapi.io/contactRequest";
+  
+  
 
   const get = async () => {
     try {
@@ -27,9 +31,11 @@ export default function AdminPage() {
         },
       });
       return await resp.json();
+     
     } catch (e) {
       console.log("Deleting Request had an issue!");
     }
+     console.log(getRequestsList);
   };
 
   useEffect(() => {
@@ -43,8 +49,12 @@ export default function AdminPage() {
     });
   }
 
+  const handleEditClick = () => {
+    // console.log(requestId);
+  };
+
   const handleDeleteClick = (requestId) => {
-    console.log(requestId);
+    // console.log(requestId);
     setTimeout(() => (
       deleteRequest(requestId)
     ), 1000);
