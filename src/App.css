@@ -37,12 +37,25 @@
   }
 }
 
-.card {
+/* .card {
   border: solid 1px black;
-}
+} */
 
 
 #inputID::placeholder {
     color: rgb(190, 188, 188);
     opacity: 1;
+}
+
+.homeHeader {
+  background-color: navy;
+  color: white;
+}
+
+#homePage {
+  background-image: url(https://garagedoorsasap.com/wp-content/uploads/2020/05/carriagedoors-1.jpg);
+}
+
+.homePageBackground {
+  background: transparent;
 }

@@ -4,7 +4,6 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import FloatingLabel from "react-bootstrap/esm/FloatingLabel";
 import ModalHeader from "react-bootstrap/esm/ModalHeader";
 
 const statesOptions = [
@@ -161,9 +160,9 @@ export default function EditRequest({
   return (
     <>
       <Button onClick={handleShowRequest}>Edit Request</Button>
-      <Modal show={showRequest} onHide={handleCloseRequest}>
-        <ModalHeader>Edit Request {requestFirstName}</ModalHeader>
-        <Form>
+      <Modal show={showRequest} onHide={handleCloseRequest} >
+        <ModalHeader>Edit Request {firstName}</ModalHeader>
+        <Form className="m-4">
           <Row className="mb-3">
             <Form.Group as={Col} controlId="inputID">
               <Form.Label>First Name</Form.Label>
@@ -276,18 +275,17 @@ export default function EditRequest({
           </Row>
           <Row>
             <Form.Group controlId="inputID">
-              <FloatingLabel label="Leave a short message on why you are filling this form out">
                 <Form.Control
                   as="textarea"
                   onChange={(e) => setRequestMessage(e.target.value)}
                   style={{ height: "100px" }}
                   placeholder={message}
                 />
-              </FloatingLabel>
             </Form.Group>
           </Row>
 
           <Button
+            className="mt-2"
             variant="primary"
             type="submit"
             onClick={(e) => {
@@ -296,7 +294,7 @@ export default function EditRequest({
           >
             Submit
           </Button>
-          <Button variant="secondary" onClick={handleCloseRequest}>Cancel</Button>
+          <Button className="mt-2" variant="secondary" onClick={handleCloseRequest}>Cancel</Button>
         </Form>
       </Modal>
     </>

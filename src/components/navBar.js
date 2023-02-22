@@ -23,14 +23,20 @@ import AdminPage from "../pages/adminPage";
 
 export default function NavBar() {
   return (
-    <>
-      <Navbar bg="dark" variant="dark">
+    <div id="navBar" >
+      <Navbar bg="dark" variant="dark" className="sticky-sm-top">
         <Container>
           <Navbar.Brand>
-            <Link to="/HomePage">A.S.A.P</Link>
+            <Nav.Link href="/HomePage">
+            <img
+              src="https://garagedoorsasap.com/wp-content/uploads/2017/04/cropped-ASAP-icon-270x270.png"
+              width="80"
+              height="80"
+              alt="Logo"
+            />
+            </Nav.Link>
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link to="/HomePage">Home</Nav.Link>
             <NavDropdown title="About">
               <NavDropdown.Item href="/CompanyProfile">
                 Company Profile
@@ -45,8 +51,33 @@ export default function NavBar() {
                 A.S.A.P Eagle River WI Location
               </NavDropdown.Item>
             </NavDropdown>
+            <NavDropdown title="Garage Doors">
+              <NavDropdown.Item href="/CompanyProfile">
+                Company Profile
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/MeetOurTeam">
+                Meet Our Team
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/Testimonials">
+                Testimonials
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Openers & Gates">
+              <NavDropdown.Item href="/CompanyProfile">
+                Company Profile
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/MeetOurTeam">
+                Meet Our Team
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/Testimonials">
+                Testimonials
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link href="/Service">Service</Nav.Link>
+            <Nav.Link href="/Contact">Contact</Nav.Link>
+            <Nav.Link href="/AdminPage">Admin Page(CRUD)</Nav.Link>
           </Nav>
-          <Link to={"/AdminPage"}>Admin Page</Link>
+          
         </Container>
       </Navbar>
       <Routes>
@@ -66,6 +97,6 @@ export default function NavBar() {
         <Route path="/Testimonials" element={<Testimonials />} />
         <Route path="/AdminPage" element={<AdminPage />} />
       </Routes>
-    </>
+    </div>
   );
 }
