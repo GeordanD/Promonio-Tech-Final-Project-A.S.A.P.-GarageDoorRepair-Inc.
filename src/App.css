@@ -40,3 +40,9 @@
 .card {
   border: solid 1px black;
 }
+
+
+#inputID::placeholder {
+    color: rgb(190, 188, 188);
+    opacity: 1;
+}

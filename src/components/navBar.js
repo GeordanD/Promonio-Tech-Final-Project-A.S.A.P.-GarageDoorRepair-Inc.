@@ -18,6 +18,9 @@ import Service from "../pages/service";
 import Testimonials from "../pages/testimonials";
 import AdminPage from "../pages/adminPage";
 
+
+
+
 export default function NavBar() {
   return (
     <>
@@ -27,28 +30,23 @@ export default function NavBar() {
             <Link to="/HomePage">A.S.A.P</Link>
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link>
-              <Link to="/HomePage">Home</Link>
-            </Nav.Link>
+            <Nav.Link to="/HomePage">Home</Nav.Link>
             <NavDropdown title="About">
-              <NavDropdown.Item>
-                <Link to="/CompanyProfile">Company Profile</Link>
+              <NavDropdown.Item href="/CompanyProfile">
+                Company Profile
               </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link to={"/MeetOurTeam"}>Meet Our Team</Link>
+              <NavDropdown.Item href="/MeetOurTeam">
+                Meet Our Team
               </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link to={"/Testimonials"}>Testimonials</Link>
+              <NavDropdown.Item href="/Testimonials">
+                Testimonials
               </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Nav.Link href="https://garagedoorsasapwi.com/">
-                  A.S.A.P Eagle River WI Location
-                </Nav.Link>
+              <NavDropdown.Item href="https://garagedoorsasapwi.com/">
+                A.S.A.P Eagle River WI Location
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-                  </Nav>
-                  <Nav.Link><Link to={"/AdminPage"}>Admin Page</Link></Nav.Link>
+          </Nav>
+          <Link to={"/AdminPage"}>Admin Page</Link>
         </Container>
       </Navbar>
       <Routes>
@@ -65,8 +63,8 @@ export default function NavBar() {
           element={<ResidentialGarageDoors />}
         />
         <Route path="/Service" element={<Service />} />
-              <Route path="/Testimonials" element={<Testimonials />} />
-              <Route path="/AdminPage" element={<AdminPage/>}/>
+        <Route path="/Testimonials" element={<Testimonials />} />
+        <Route path="/AdminPage" element={<AdminPage />} />
       </Routes>
     </>
   );

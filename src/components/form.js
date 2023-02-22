@@ -211,7 +211,7 @@ export default function RequestForm() {
 
             <Form.Group as={Col} controlId="formGridState">
               <Form.Label>State</Form.Label>
-              <Form.Select defaultValue="Choose..." value={selectedStates} onChange={(e) => setSelectedStates(e.target.value)}>
+              <Form.Select defaultValue="Choose..." onChange={(e) => setSelectedStates(e.target.value)}>
                 {statesOptions.map((value) => (
                   <option value={value} key={value}>
                     {value}
