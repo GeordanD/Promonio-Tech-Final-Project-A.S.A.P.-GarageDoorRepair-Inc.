@@ -27,7 +27,7 @@ export default function NavBar() {
       <Navbar bg="light" variant="light" className="sticky-sm-top" expand="lg">
         <Container>
           <Navbar.Brand>
-            <Nav.Link href="/HomePage">
+            <Nav.Link href="/">
               <img
                 src="https://garagedoorsasap.com/wp-content/uploads/2017/04/cropped-ASAP-icon-270x270.png"
                 width="80"
@@ -76,8 +76,8 @@ export default function NavBar() {
           </Nav>
         </Container>
       </Navbar>
-      <Routes>
-        <Route path="/HomePage" element={<HomePage />} />
+      <Routes >
+        <Route path="/" element={<HomePage />} />
         <Route path="/Commercial" element={<CommercialOverheadDoors />} />
         <Route path="/CompanyProfile" element={<CompanyProfile />} />
         <Route path="/Contact" element={<Contact />} />

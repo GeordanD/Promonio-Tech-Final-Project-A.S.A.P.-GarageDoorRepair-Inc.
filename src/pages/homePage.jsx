@@ -6,6 +6,7 @@ import TestimonialsComponent from "../components/testimonialsComponent";
 
 export default function HomePage() {
   return (
+    
     <div id="homePage">
       <HomeCarousel />
       <section>

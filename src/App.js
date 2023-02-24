@@ -6,12 +6,13 @@ import MyInfoFooter from "./components/myInfoFooter";
 import NavBar from "./components/navBar";
 
 
+
 function App() {
   return (
     <>
       <div className="App">
         <Header/>
-        <NavBar />
+       <NavBar/>
         <FooterLinks />
         <Footer />
         <MyInfoFooter/>
