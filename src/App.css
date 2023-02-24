@@ -54,8 +54,34 @@
 
 #homePage {
   background-image: url(https://garagedoorsasap.com/wp-content/uploads/2020/05/carriagedoors-1.jpg);
+  background-repeat:no-repeat
 }
 
 .homePageBackground {
   background: transparent;
+}
+
+.homePageSection-3 {
+  display: inline
+}
+
+.inline {
+  display: inline;
+}
+
+.companyPhoto {
+  width: 500px;
+}
+
+.shadow {
+  background-color: rgba(51, 50, 50, 0.5);
+}
+
+
+.zoom {
+  transition: transform .6s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.25); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }

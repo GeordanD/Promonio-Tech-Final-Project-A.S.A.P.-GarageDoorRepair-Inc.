@@ -1,9 +1,14 @@
 import React from "react";
+import RequestForm from "../components/form";
+
+import TestimonialsComponent from "../components/testimonialsComponent";
+
 
 export default function Testimonials() {
   return (
-    <>
-        <h1>Testimonials</h1>
-    </>
+    <div>
+      <TestimonialsComponent />
+      <RequestForm/>
+    </div>
   );
 }

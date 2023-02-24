@@ -117,7 +117,7 @@ export default function RequestForm() {
 
 
     return (
-      <div className="container">
+      <div className="container mb-5">
         <h2>Need A Garage Door Repair of Installation Estimate?</h2>
         <h3><b>Please complete the following form. Our expert staff will contact you as soon as possible.</b></h3>
         <br></br>

@@ -12,12 +12,20 @@ export default function HomeCarousel() {
               src="https://garagedoorsasap.com/wp-content/uploads/2020/07/commercial-overhead-door-installation-e1596216449938.jpg"
               alt="Commercial Overhead Door"
             />
-            {/* //TODO Make Shaded Portion on Captions for carousel */}
-            <Carousel.Caption className="carousel-caption">
-              <h2>Commercial Overhead Door Installation and Service</h2>
-              <Button variant="success" id="commercialButton" href="/Contact">
+            <Carousel.Caption className="shadow-5-strong bg-dark p-2 bg-opacity-75">
+              <div className="d-flex align-items-center container">
+                <div className="me-5">
+                <h2>
+                  Commercial Overhead Door <br /> Installation and Service
+                  </h2>
+                </div>
+                <div className="ms-2">
+                  <Button variant="success" id="commercialButton" href="/Contact">
                 SCHEDULE YOUR CONSULTATION
               </Button>
+                </div>
+              </div>
+              
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -27,12 +35,22 @@ export default function HomeCarousel() {
               alt="Residential Garage Door"
             />
 
-            <Carousel.Caption className="carousel-caption">
-              <h2>Residential Garage Door</h2>
-              <Button variant="success" id="residentialButton" href="/Contact">
-                TALK TO AN EXPERT
-              </Button>
-              <h2>Installation and Service</h2>
+            <Carousel.Caption className="shadow-5-strong bg-dark p-2 bg-opacity-75">
+              <div className="d-flex align-items-center container">
+                <div className="container">
+                  <h1>Residential Garage Door</h1>
+                  <h1>Installation and Service</h1>
+                </div>
+                <div className="container">
+                  <Button
+                    variant="success"
+                    id="residentialButton"
+                    href="/Contact"
+                  >
+                    TALK TO AN EXPERT
+                  </Button>
+                </div>
+              </div>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>

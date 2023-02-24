@@ -1,7 +1,7 @@
 // TODOAdd Eagle River Link into nav bar
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
-import { Link, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
@@ -23,17 +23,17 @@ import AdminPage from "../pages/adminPage";
 
 export default function NavBar() {
   return (
-    <div id="navBar" >
-      <Navbar bg="dark" variant="dark" className="sticky-sm-top">
+    <div id="navBar">
+      <Navbar bg="light" variant="light" className="sticky-sm-top" expand="lg">
         <Container>
           <Navbar.Brand>
             <Nav.Link href="/HomePage">
-            <img
-              src="https://garagedoorsasap.com/wp-content/uploads/2017/04/cropped-ASAP-icon-270x270.png"
-              width="80"
-              height="80"
-              alt="Logo"
-            />
+              <img
+                src="https://garagedoorsasap.com/wp-content/uploads/2017/04/cropped-ASAP-icon-270x270.png"
+                width="80"
+                height="80"
+                alt="Logo"
+              />
             </Nav.Link>
           </Navbar.Brand>
           <Nav className="me-auto">
@@ -52,32 +52,28 @@ export default function NavBar() {
               </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Garage Doors">
-              <NavDropdown.Item href="/CompanyProfile">
-                Company Profile
+              <NavDropdown.Item href="/ResidentialGarageDoors">
+                Residential Garage Doors
               </NavDropdown.Item>
-              <NavDropdown.Item href="/MeetOurTeam">
-                Meet Our Team
+              <NavDropdown.Item href="/Commercial">
+                Commercial Overhead Doors
               </NavDropdown.Item>
-              <NavDropdown.Item href="/Testimonials">
-                Testimonials
+              <NavDropdown.Item href="/GarageScreenDoors">
+                Garage Screen Doors
               </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Openers & Gates">
-              <NavDropdown.Item href="/CompanyProfile">
-                Company Profile
+              <NavDropdown.Item href="/GarageDoorOpeners">
+                Garage Door Openers
               </NavDropdown.Item>
-              <NavDropdown.Item href="/MeetOurTeam">
-                Meet Our Team
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/Testimonials">
-                Testimonials
+              <NavDropdown.Item href="/GateOpeners">
+                Gate Operators
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/Service">Service</Nav.Link>
             <Nav.Link href="/Contact">Contact</Nav.Link>
             <Nav.Link href="/AdminPage">Admin Page(CRUD)</Nav.Link>
           </Nav>
-          
         </Container>
       </Navbar>
       <Routes>
