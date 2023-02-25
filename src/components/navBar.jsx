@@ -1,4 +1,3 @@
-// TODOAdd Eagle River Link into nav bar
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import { Route, Routes } from "react-router-dom";
@@ -29,8 +28,8 @@ export default function NavBar() {
             <Nav.Link href="/">
               <img
                 src="https://garagedoorsasap.com/wp-content/uploads/2017/04/cropped-ASAP-icon-270x270.png"
-                width="125"
-                height="125"
+                width="80"
+                height="80"
                 alt="Logo"
               />
             </Nav.Link>

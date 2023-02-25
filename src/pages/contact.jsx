@@ -20,7 +20,7 @@ export default function Contact() {
           <MDBContainer className="text-center text-md-start mt-5">
             <MDBRow className="mt-3">
               <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
-                <h4 className="text-uppercase fw-bold mb-4">
+                <h4 className="text-uppercase fw-bold mb-4 green">
                   <MDBIcon icon="location" className="me-5" />
                   VISIT US
                 </h4>
@@ -39,7 +39,7 @@ export default function Contact() {
               </MDBCol>
 
               <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
-                <h4 className="text-uppercase fw-bold mb-4">
+                <h4 className="text-uppercase fw-bold mb-4 green">
                   <MDBIcon icon="phone" className="me-5" />
                   CALL US
                 </h4>
@@ -55,7 +55,7 @@ export default function Contact() {
               </MDBCol>
 
               <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
-                <h4 className="text-uppercase fw-bold mb-4">
+                <h4 className="text-uppercase fw-bold mb-4 green">
                   <MDBIcon icon="clock" className="me-5" />
                   HOURS
                 </h4>

@@ -42,7 +42,7 @@ export default function AdminPage() {
   };
 
   return (
-    <div>
+    <div className="mb-5">
       {data && (
         <Table>
           <thead>
@@ -73,7 +73,7 @@ export default function AdminPage() {
                 <td>{request.phoneNumber}</td>
                 <td>{request.email}</td>
                 <td>{request.message}</td>
-                <td>
+                <td className="d-flex">
                         <EditRequest
                             getRequests={getRequests}
                     id={request.id}
@@ -96,7 +96,7 @@ export default function AdminPage() {
                       DeleteRequest(request.id);
                     }}
                   >
-                    Delete
+                    Delete Request
                   </Button>
                 </td>
               </tr>

@@ -1,29 +1,236 @@
 import React from "react";
+import {
+  MDBCard,
+  MDBCardImage,
+  MDBCardBody,
+  MDBCardTitle,
+  MDBCardText,
+  MDBRow,
+  MDBCol
+} from 'mdb-react-ui-kit';
+import RequestForm from "../components/form";
+
 
 export default function GarageDoorOpeners() {
   return (
     <div>
-      <header>
-        <div
-          className="p-5 mb-2 text-center bg-image"
-          style={{
-            backgroundImage:
-              "url(data:image/jpeg;base64,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)",
-            height: "200px",
-          }}
-        >
+      <section className="mb-5">
+        <header>
           <div
-            className="mask"
-            style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
+            className="p-5 mb-2 text-center bg-image"
+            style={{
+              backgroundImage:
+                "url(https://arizonagaragedoors.com/wp-content/uploads/2022/01/service-title-bglift-master-scaled.jpg)",
+              height: "200px",
+            }}
           >
-            <div className="d-flex justify-content-center align-items-center h-100">
-              <div className="text-white">
-                <h1 className="mb-3">GarageDoorOpeners</h1>
+            <div
+              className="mask"
+              style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
+            >
+              <div className="d-flex justify-content-center align-items-center h-100">
+                <div className="text-white">
+                  <h1 className="mb-3">GarageDoorOpeners</h1>
+                </div>
               </div>
             </div>
           </div>
+        </header>
+      </section>
+      <section className="mb-5">
+        <div className="container">
+          <h5>
+            <strong>A.S.A.P. is a LiftMaster® Provantage Dealer.</strong>
+            <p>
+              We carry the full line of LifMaster® Garage Door Openers. For over
+              45 years LiftMaster® has been exceeding expectations by providing
+              peace of mind through expert services and innovative solutions.
+            </p>
+          </h5>
         </div>
-      </header>
+      </section>
+      <section className="mb-5">
+        <div>
+          <div className="d-flex align-items-center container">
+            <div className="ms-5">
+              <a href="https://www.liftmaster.com/">
+                <img
+                  src="https://garagedoorsasap.com/wp-content/uploads/2022/03/LiftMaster-logo-2022-300.png"
+                  alt="LiftMaster"
+                  className="zoom"
+                />
+              </a>
+            </div>
+            <div>
+              <p className="ms-5">
+                LiftMaster’s latest advances like{" "}
+                <strong>MyQ® Technology, Security+ 2.0™, Battery Backup</strong>{" "}
+                and the specially designed <strong>P3 Motors™</strong> allow
+                their products to best serve your specific needs while keeping
+                you safe and connected at all times. We carry a full range of
+                products that can help you monitor and control your garage door
+                or gate. By connecting with your smartphone, tablet or computer,
+                staying connected and in control has never been easier.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="mb-5">
+        <div className="container">
+          <MDBRow className="row-cols-1 row-cols-md-3 g-4">
+            <MDBCol>
+              <MDBCard>
+                <MDBCardImage
+                  src="https://garagedoorsasap.com/wp-content/uploads/2022/03/x87504_267_hero_1-400x265.jpeg"
+                  alt="..."
+                  position="top"
+                  className="zoom-small"
+                />
+                <MDBCardBody>
+                  <MDBCardTitle>LiftMaster 87504</MDBCardTitle>
+                  <MDBCardText>
+                    Secure View™ Ultra-Quiet Belt Drive Smart Opener with
+                    Camera, LED Corner to Corner Lighting™ and Battery Backup.
+                    Built-in camera adds video and 2-way audio communication to
+                    the myQ® app. Control, secure and monitor the garage with
+                    the myQ app- anytime, from anywhere. 360° light ring
+                    uniformly brightens every corner of the garage with 2,000
+                    lumens of long-lasting LED light.
+                  </MDBCardText>
+                </MDBCardBody>
+              </MDBCard>
+            </MDBCol>
+            <MDBCol>
+              <MDBCard>
+                <MDBCardImage
+                  src="https://garagedoorsasap.com/wp-content/uploads/2022/03/LM84501-400x264.jpeg"
+                  alt="..."
+                  position="top"
+                  className="zoom-small"
+                />
+                <MDBCardBody>
+                  <MDBCardTitle>LiftMaster 84501</MDBCardTitle>
+                  <MDBCardText>
+                    Ultra-Quiet Belt Drive Smart Opener with Dual LED Lighting.
+                    Control, secure and monitor the garage with the myQ app-
+                    anytime, from anywhere. Integrated LED lighting system
+                    brightens high traffic areas of the garage with 1500 lumens
+                    of light.
+                  </MDBCardText>
+                </MDBCardBody>
+              </MDBCard>
+            </MDBCol>
+            <MDBCol>
+              <MDBCard>
+                <MDBCardImage
+                  src="https://garagedoorsasap.com/wp-content/uploads/2022/04/8365W-267_hero_1-400x400.png"
+                  alt="..."
+                  position="top"
+                  className="zoom-small"
+                />
+                <MDBCardBody>
+                  <MDBCardTitle>LiftMaster 8365W-267</MDBCardTitle>
+                  <MDBCardText>
+                    ½ HP AC Chain Drive Wi-Fi Garage Door Opener with built-in
+                    Wi-Fi® allows for smartphone control with the myQ® app,
+                    industrial-strength chain drive and includes extra remote
+                    and keyless entry system.
+                  </MDBCardText>
+                </MDBCardBody>
+              </MDBCard>
+            </MDBCol>
+            <MDBCol>
+              <MDBCard>
+                <MDBCardImage
+                  src="https://garagedoorsasapwi.com/wp-content/uploads/2020/01/8165W.jpg"
+                  alt="..."
+                  position="top"
+                  className="zoom-small"
+                />
+                <MDBCardBody>
+                  <MDBCardTitle>LiftMaster 8165W</MDBCardTitle>
+                  <MDBCardText>
+                    ½ HP AC Chain Drive Wi-Fi Garage Door Opener with built-in
+                    Wi-Fi® allows for smartphone control. Industrial-strength
+                    chain drive and enables secure in-garage delivery for Amazon
+                    Prime packages.
+                  </MDBCardText>
+                </MDBCardBody>
+              </MDBCard>
+            </MDBCol>
+            <MDBCol>
+              <MDBCard>
+                <MDBCardImage
+                  src="https://garagedoorsasap.com/wp-content/uploads/2022/04/8500W-400x400.png"
+                  alt="..."
+                  position="top"
+                  className="zoom-small"
+                />
+                <MDBCardBody>
+                  <MDBCardTitle>LiftMaster 8500W</MDBCardTitle>
+                  <MDBCardText>
+                    Wall mount design frees up ceiling space in your garage,
+                    reduces noise and vibration. Built-in Wi-Fi® allows for
+                    smartphone control with the myQ® app. Battery Backup allows
+                    you to open/close your door even when the power is out.
+                    Includes myQ Remote LED Light featuring 1,500 lumens.
+                  </MDBCardText>
+                </MDBCardBody>
+              </MDBCard>
+            </MDBCol>
+            <MDBCol>
+              <MDBCard>
+                <MDBCardImage
+                  src="https://garagedoorsasap.com/wp-content/uploads/2022/04/8500-400x400.png"
+                  alt="..."
+                  position="top"
+                  className="zoom-small"
+                />
+                <MDBCardBody>
+                  <MDBCardTitle>LiftMaster 8500</MDBCardTitle>
+                  <MDBCardText>
+                    This sleek, space-saving design mounts on the wall beside
+                    your garage door, freeing up ceiling space. This Elite
+                    Series model comes fully equipped with Security+ 2.0®, MyQ®
+                    Technology and the Timer-to-Close system.
+                  </MDBCardText>
+                </MDBCardBody>
+              </MDBCard>
+            </MDBCol>
+          </MDBRow>
+        </div>
+      </section>
+      <section className="mb-5">
+        <div>
+          <div className="d-flex align-items-center container">
+            <div className="me-5">
+              <h3>
+                SMART STARTS IN THE GARAGE. CLOSE FROM ANYWHERE, OPEN FOR
+                ANYONE, GET ALERTS.
+              </h3>
+              <p className="d-flex align-items-center container">
+                With myQ smart home technology, you’ll always know what’s going
+                on at home, even while you’re away. Let in the dog walker or
+                repairman. Feel reassured that the kids got home safely. Never
+                wonder if the garage door was left open again. That’s peace of
+                mind right in the palm of your hand.
+              </p>
+            </div>
+            <div>
+              <img
+                src="https://garagedoorsasap.com/wp-content/uploads/2020/05/liftmaster-iq-tech.jpg"
+                alt="person walking dog with myQ smart home technology"
+                className="ms-5"
+                style={{ width: "700px" }}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="mb-5">
+        <RequestForm />
+      </section>
     </div>
   );
 }

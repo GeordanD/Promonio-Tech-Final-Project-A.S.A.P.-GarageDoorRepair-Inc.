@@ -52,7 +52,7 @@ export default function Footer() {
             <MDBRow className="mt-3">
               <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">
-                  <MDBIcon color="secondary" icon="gem" className="me-3" />
+                  <MDBIcon color="secondary" icon="house" className="me-3" />
                   A.S.A.P. Garage Door Repair, Inc.
                 </h6>
                 <h6>Our Service Area</h6>

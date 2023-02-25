@@ -45,6 +45,7 @@
 .homeHeader {
   background-color: navy;
   color: white;
+
 }
 
 #homePage {
@@ -89,7 +90,11 @@
 
 
 .green:hover {
-  color: rebeccapurple;
+  color: rgb(126, 202, 11);
+;
+}
+.green-button:hover{
+    background-color: rgb(126, 202, 11) 
 }
 
 .card-container {
@@ -111,4 +116,25 @@
 
 .card-title {
   color:#282c34
+}
+
+.zoom-small {
+  transition: transform .6s; /* Animation */
+}
+
+.zoom-small:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#testimonialComponent {
+  border-radius: .75rem;
+}
+
+.companyProfileHeader {
+  background-image: url(https://www.chiohd.com/hubfs/Homeowner/Collections/Studio/Studio-Planks.jpg);
+  background-size:cover;
+  background-position: center;
+  height: 25vh;
+  width: 100vw;
+  max-width: 100%;
 }

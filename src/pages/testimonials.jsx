@@ -13,7 +13,7 @@ export default function Testimonials() {
             className="p-5 mb-5 text-center bg-image"
             style={{
               backgroundImage:
-                "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS65CqpDfi5sgvUnDz2NQtWn-iBGaQo7O5LEw&usqp=CAU)",
+                "url(https://res.cloudinary.com/brickandbatten/images/f_auto,q_auto/v1640999517/wordpress_assets/23544-Garage-FR/23544-Garage-FR.jpg?_i=AA)",
               height: "200px",
             }}
           >

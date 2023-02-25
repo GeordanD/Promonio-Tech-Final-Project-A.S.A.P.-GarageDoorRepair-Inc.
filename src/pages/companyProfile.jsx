@@ -8,12 +8,7 @@ export default function CompanyProfile() {
       <section>
         <header>
           <div
-            className="p-5 mb-2 text-center bg-image"
-            style={{
-              backgroundImage:
-                "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS65CqpDfi5sgvUnDz2NQtWn-iBGaQo7O5LEw&usqp=CAU)",
-              height: "200px",
-            }}
+            className="p-5 mb-2 text-center bg-image companyProfileHeader"
           >
             <div
               className="mask"
@@ -40,7 +35,7 @@ export default function CompanyProfile() {
         </div>
       </section>
       <section className="mb-5">
-        <div>
+        <div >
           <div className="d-flex align-items-center container">
             <img
               src="https://garagedoorsasap.com/wp-content/uploads/2020/05/poling-family.jpg"

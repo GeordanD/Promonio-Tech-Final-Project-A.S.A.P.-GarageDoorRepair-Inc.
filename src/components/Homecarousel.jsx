@@ -11,28 +11,33 @@ export default function HomeCarousel() {
               className="d-block w-100"
               src="https://garagedoorsasap.com/wp-content/uploads/2020/07/commercial-overhead-door-installation-e1596216449938.jpg"
               alt="Commercial Overhead Door"
+              style={{ height: "70vh" }}
             />
             <Carousel.Caption className="shadow-5-strong bg-dark p-2 bg-opacity-75">
               <div className="d-flex align-items-center container">
                 <div className="me-5">
-                <h2>
-                  Commercial Overhead Door <br /> Installation and Service
+                  <h2>
+                    Commercial Overhead Door <br /> Installation and Service
                   </h2>
                 </div>
                 <div className="ms-2">
-                  <Button variant="success" id="commercialButton" href="/Contact">
-                SCHEDULE YOUR CONSULTATION
-              </Button>
+                  <Button
+                    variant="success"
+                    id="commercialButton"
+                    href="/Contact"
+                  >
+                    SCHEDULE YOUR CONSULTATION
+                  </Button>
                 </div>
               </div>
-              
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item>
+          <Carousel.Item style={{ height: "60vh" }}>
             <img
               className="d-block w-100"
               src="//garagedoorsasap.com/wp-content/uploads/2020/07/residential-door-installation-e1596216419911.jpg"
               alt="Residential Garage Door"
+              style={{ height: "70vh" }}
             />
 
             <Carousel.Caption className="shadow-5-strong bg-dark p-2 bg-opacity-75">

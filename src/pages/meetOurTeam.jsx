@@ -19,8 +19,8 @@ export default function MeetOurTeam() {
           className="p-5 mb-2 text-center bg-image"
           style={{
             backgroundImage:
-              "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS65CqpDfi5sgvUnDz2NQtWn-iBGaQo7O5LEw&usqp=CAU)",
-            height: "200px",
+              "url(https://www.nwdusa.com/wp-content/uploads/2021/11/Modern-Classic-Slider-MC44-Dark-Bronze-Anodized-Satin-Etch-Glass-2000x1062.jpg)",
+            height: "175px",
           }}
         >
           <div

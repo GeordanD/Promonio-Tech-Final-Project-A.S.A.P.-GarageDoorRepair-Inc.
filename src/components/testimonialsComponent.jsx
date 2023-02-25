@@ -3,7 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 
 export default function TestimonialsComponent() {
   return (
-    <div className="container shadow-5-strong bg-secondary p-2 bg-opacity-50 text-center mb-5">
+    <div id="testimonialComponent" className="container shadow-5-strong bg-secondary p-2 bg-opacity-50 text-center mb-5">
       <Carousel variant="dark" className="">
         <Carousel.Item className="mb-5">
           <div>

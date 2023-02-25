@@ -211,7 +211,8 @@ export default function RequestForm() {
 
             <Form.Group as={Col} controlId="formGridState">
               <Form.Label>State</Form.Label>
-              <Form.Select defaultValue="Choose..." onChange={(e) => setSelectedStates(e.target.value)}>
+              <Form.Select defaultValue="Choose..." onChange={(e) => setSelectedStates(e.target.value)} required>
+                <option value={null}>Choose...</option>
                 {statesOptions.map((value) => (
                   <option value={value} key={value}>
                     {value}
@@ -227,7 +228,7 @@ export default function RequestForm() {
           </Row>
           <Row>
             <Form.Group>
-              <FloatingLabel label="Leave a short message on why you are filling this form out">
+              <FloatingLabel label="Leave a short message on why you are contacting A.S.A.P. Today">
                 <Form.Control as="textarea" onChange={(e) => setPostMessage(e.target.value)} style={{ height: "100px" }} />
               </FloatingLabel>
             </Form.Group>

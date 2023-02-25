@@ -254,9 +254,10 @@ export default function EditRequest({
             <Form.Group as={Col} controlId="inputID">
               <Form.Label>State</Form.Label>
               <Form.Select
-                defaultValue={selectedStates}
+                defaultValue={setSelectedStates}
                 onChange={(e) => setSelectedStates(e.target.value)}
               >
+                <option>Choose....</option>
                 {statesOptions.map((value) => (
                   <option value={value} key={value}>
                     {value}

@@ -11,7 +11,7 @@ export default function ResidentialGarageDoors() {
             className="p-5 mb-2 text-center bg-image"
             style={{
               backgroundImage:
-                "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS65CqpDfi5sgvUnDz2NQtWn-iBGaQo7O5LEw&usqp=CAU)",
+                "url(https://www.nwdusa.com/wp-content/uploads/2021/11/Modern-Classic-Slider-MC44-Dark-Bronze-Anodized-Satin-Etch-Glass-2000x1062.jpg)",
               height: "200px",
             }}
           >
@@ -127,7 +127,9 @@ export default function ResidentialGarageDoors() {
                 samples. Please feel free to set up an appointment, or stop in
                 and see our showroom!
               </p>
-              <Button href="/Contact" variant="success">Request An Appointment</Button>
+              <Button href="/Contact" variant="success">
+                Request An Appointment
+              </Button>
             </div>
             <div>
               <img
@@ -140,7 +142,7 @@ export default function ResidentialGarageDoors() {
           </div>
         </div>
       </section>
-      <RequestForm/>
+      <RequestForm />
     </div>
   );
 }

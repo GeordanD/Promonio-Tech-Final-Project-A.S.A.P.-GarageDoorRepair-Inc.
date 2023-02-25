@@ -6,7 +6,6 @@ import TestimonialsComponent from "../components/testimonialsComponent";
 
 export default function HomePage() {
   return (
-    
     <div id="homePage">
       <HomeCarousel />
       <section>
@@ -46,7 +45,7 @@ export default function HomePage() {
         <Card className="text-white  homePageSection-3">
           <div className="d-flex align-items-center container">
             <div>
-              <Card.Title className="mt-2">
+              <Card.Title className="mt-2" style={{color: "white"}}>
                 Garage Door Repair and Preventative Maintenance
               </Card.Title>
               <Card.Text className="mt-2 homePageSection-3">
@@ -106,12 +105,11 @@ export default function HomePage() {
               src="https://garagedoorsasap.com/wp-content/uploads/2015/07/CHI-7-23-2015-15-47-1024x681.jpg"
               alt="house"
               className="companyPhoto"
+              id="testimonialComponent"
             />
           </div>
         </div>
       </section>
-
-
     </div>
   );
 }

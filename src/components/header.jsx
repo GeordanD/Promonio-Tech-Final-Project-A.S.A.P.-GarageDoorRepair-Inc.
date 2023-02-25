@@ -11,9 +11,8 @@ export default function Header() {
             
             <Container>
                 <Row >
-                    <Col><Button className="m-2 bg-light text-primary" href="/Contact">REQUEST QUOTE</Button></Col>
-                    <Col className="m-2"><h4>847-695-8888</h4></Col>
-                    <Col className="m-2"><h4>815-479-8888</h4></Col>
+                    <Col><div><Button className="m-2 green-button" href="/Contact">REQUEST QUOTE</Button></div></Col>
+                    <Col className="m-2"><h4 className="green">815-479-8888</h4><h4 className="green">847-695-8888</h4></Col>
                 </Row>
             </Container>
                 
