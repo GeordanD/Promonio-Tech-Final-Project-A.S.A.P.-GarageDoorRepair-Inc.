@@ -15,7 +15,7 @@ export default class TeamMemebers extends React.Component {
     };
     render() {
         return (
-          <Card style={{width: "350px"}} className="team-card">
+          <Card style={{width: "350px"}} className="team-card" key={this.state.name}>
             <div className="cardBox">
               <Card.Img
                 variant="top"

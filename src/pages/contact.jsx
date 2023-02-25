@@ -24,18 +24,18 @@ export default function Contact() {
                   <MDBIcon icon="location" className="me-5" />
                   VISIT US
                 </h4>
-                <p>
+                <>
                   <h6>A.S.A.P Garage Door Repair, Inc.</h6>
-                </p>
+                </>
                 <p>11351 Allison Ct. Huntley, IL 60142</p>
-                <p>
+                <>
                   <a
                     href="https://www.google.com/maps/dir//ASAP+Garage+Door+Repair,+11351+Allison+Ct,+Huntley,+IL+60142/@42.153753,-88.41831,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x880f14177c5e8b1f:0xfe5afda564f2c7e0!2m2!1d-88.4183104!2d42.1537534?hl=en"
                     className="text-reset"
                   >
                     Map and Directions
                   </a>
-                </p>
+                </>
               </MDBCol>
 
               <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
@@ -78,9 +78,9 @@ export default function Contact() {
         width="600"
         height="450"
         className="mb-4"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
+        allowFullScreen=""
+        loading="passive"
+        referrerPolicy="no-referrer-when-downgrade"
         title="ASAP MAP"
       />
     </>

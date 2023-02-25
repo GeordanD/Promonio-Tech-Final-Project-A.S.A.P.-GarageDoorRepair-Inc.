@@ -6,7 +6,7 @@ export default function MeetOurTeam() {
   const teamList = teamMembers.map(member => {
     return (
       <TeamMemebers
-        key={member.id}
+        key={member.name}
         member={member}
       />
   )
