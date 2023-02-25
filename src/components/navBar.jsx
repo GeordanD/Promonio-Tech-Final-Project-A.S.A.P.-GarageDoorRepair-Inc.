@@ -10,7 +10,6 @@ import CommercialOverheadDoors from "../pages/commercialOverheadDoors";
 import CompanyProfile from "../pages/companyProfile";
 import Contact from "../pages/contact";
 import GarageDoorOpeners from "../pages/garageDoorOpeners";
-import GarageScreenDoors from "../pages/garageScreenDoors";
 import GateOpeners from "../pages/gateOpeners";
 import MeetOurTeam from "../pages/meetOurTeam";
 import ResidentialGarageDoors from "../pages/residentialGarageDoors";
@@ -58,9 +57,6 @@ export default function NavBar() {
               <NavDropdown.Item href="/Commercial">
                 Commercial Overhead Doors
               </NavDropdown.Item>
-              <NavDropdown.Item href="/GarageScreenDoors">
-                Garage Screen Doors
-              </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Openers & Gates">
               <NavDropdown.Item href="/GarageDoorOpeners">
@@ -82,7 +78,6 @@ export default function NavBar() {
         <Route path="/CompanyProfile" element={<CompanyProfile />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/GarageDoorOpeners" element={<GarageDoorOpeners />} />
-        <Route path="/GarageScreenDoors" element={<GarageScreenDoors />} />
         <Route path="/GateOpeners" element={<GateOpeners />} />
         <Route path="/MeetOurTeam" element={<MeetOurTeam />} />
         <Route
