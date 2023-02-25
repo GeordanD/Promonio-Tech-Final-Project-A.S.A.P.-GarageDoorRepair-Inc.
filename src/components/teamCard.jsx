@@ -21,7 +21,7 @@ export default class TeamMemebers extends React.Component {
                 variant="top"
                 className="cardImg"
                 src={this.state.picture}
-                width="200"
+                height="450"
                 alt={this.state.name}
                     />              <Card.Title className="card-title">
                 {this.state.name}

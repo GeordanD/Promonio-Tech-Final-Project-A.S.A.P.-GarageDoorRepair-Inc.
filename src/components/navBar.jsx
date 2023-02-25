@@ -29,8 +29,8 @@ export default function NavBar() {
             <Nav.Link href="/">
               <img
                 src="https://garagedoorsasap.com/wp-content/uploads/2017/04/cropped-ASAP-icon-270x270.png"
-                width="80"
-                height="80"
+                width="125"
+                height="125"
                 alt="Logo"
               />
             </Nav.Link>
